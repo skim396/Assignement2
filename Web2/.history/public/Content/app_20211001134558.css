@@ -1,0 +1,80 @@
+/*
+* File Name  : app.css
+* Author     : Yonas Berhane
+* Student Id : 301165447
+* Date       : September 27, 2021
+* Description: Assignment 1- Express Portfolio Site for COMP229-F2021
+*/
+
+/* global */
+ section{
+    
+    padding-bottom:0px;
+} 
+
+section h1{
+    
+    text-align: left;
+
+}
+section p{
+    font-weight: 300;
+    
+}
+button{
+  max-width: 50%;
+    
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    display:block;
+    font-family: 'Inter', sans-serif ;
+    height: auto;
+    
+}
+
+/*header area*/
+.header_area{
+    color:black;
+}
+
+.contact-area{
+   
+}
+/* about me */
+.about_area{
+    padding
+}
+ /*Services Area */ 
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height:35px;
+    width: 100%;
+    background-color:black;
+    color:white;
+    text-align: center;
+ }

@@ -1,0 +1,50 @@
+<div class="row justify-content-lg-center g-3">
+    <h1><%= title %> contact list</h1>
+
+    <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">username</span>
+            <input type="text" class="form-control" placeholder="Enter contact username" aria-label="contact username" aria-describedby="contact username"
+            name="name" value="<%= contact.username %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">Phone</span>
+            <input type="text" class="form-control" placeholder="Enter contact phone number" aria-label="contact phone number" aria-describedby="contact phone number"
+            name="phone" value="<%= contact.password %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">email</span>
+            <input type="text" class="form-control" placeholder="Enter contact email" aria-label="contact email" aria-describedby="contact email"
+            name="email" value="<%= contact.email %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">city</span>
+            <input type="text" class="form-control" placeholder="Enter contact city" aria-label="contact city" aria-describedby="contact city"
+            name="city" value="<%= contact.city %>" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">profession</span>
+            <input type="text" class="form-control" placeholder="Enter contact profession" aria-label="contact profession" aria-describedby="contact profession"
+            name="profession" value="<%= contact.profession %>" required>
+        </div>
+            
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-name">age</span>
+            <input type="text" class="form-control" placeholder="Enter contact age" aria-label="contact age" aria-describedby="contact age"
+            name="age" value="<%= contact.age %>" required>
+        </div>
+
+            <% if(title == "Edit") { %>
+                <button type="submit" id="editButton" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i> Edit</button>
+            <% } else { %>
+                <button type="submit" id="addButton" class="btn btn-primary"><i class="fas fa-plus-circle fa-lg"></i> Add</button>
+            <% } %>  
+            
+            <a href="/contact-list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</a>
+        </div>
+    </form>
+</div>

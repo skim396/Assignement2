@@ -1,0 +1,11 @@
+{
+  "name": "express-portfolio-assignment1",
+  "version": "0.0.1",
+  "description": "Portfolio Site using ExpressJS and EJS templating",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yonas Berhane",
+  "license": "MIT"
+}

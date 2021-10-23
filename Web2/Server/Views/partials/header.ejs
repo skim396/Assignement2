@@ -1,0 +1,76 @@
+<!-- /*
+* name : Seungkoo Kim
+* id : 301150666
+* file Name : header.ejs
+* date : 23/10/2021
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+</head>
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-md  bg-warning  navbar-light" >
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+      <img src="/Assets/images/logo.JPG" alt="logo" style="width:40px;">
+    </a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+    
+
+      <li class="nav-item">
+        <a class="nav-link" href="/"><i class="fas fa-chair"></i>Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about"><i class="far fa-id-card"></i>About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/projects"><i class="far fa-snowflake"></i>Projects</a>
+      </li>
+
+      <i class="fal fa-tv-alt"></i>
+      <li class="nav-item">
+        <a class="nav-link" href="/services"><i class="fas fa-bell"></i>Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact"><i class="fas fa-coffee"></i>Contact</a>
+      </li>
+            
+          <li class="nav-item">
+            <% if (title == 'Contact List') { %>
+            <a class="nav-link active" href="/contactlist">
+              <% } else { %>
+              <a class="nav-link" href="/contactlist">
+                <% } %>
+                <i class="fas fa-list-ol fa-lg"></i>Business Contacts List</a>
+          </li>
+
+            <% if(displayName) { %>
+          <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i>Logout</a>
+          </li>
+          <% } else { %>
+          <li class="nav-item">
+            <% if (title == 'Login') { %>
+            <a class="nav-link active" href="/login">
+              <% } else { %>
+              <a class="nav-link" href="/login">
+                <% } %>
+                <i class="fas fa-sign-in-alt fa-lg"></i> Login</a>
+          </li>
+          <% } %>
+          </ul>
+        </div>
+    </nav>
+  </div>
+</header>
+</section>

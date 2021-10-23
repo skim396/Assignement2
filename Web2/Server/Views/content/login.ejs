@@ -1,0 +1,62 @@
+<!-- /*
+* name : Seungkoo Kim
+* id : 301150666
+* file Name : login.ejs
+* date : 23/10/2021
+*/ -->
+<body style="background-color: beige;"></body>
+<div class="row">
+  <div class="container p-3 my-3 border" style="box-shadow: 1px 1px 5px 3px">
+          <div class="login" id="contentArea">
+            <div class="jumbotron jumbotron-fluid">
+              <h2 style="font-family:fantasy;" align="center">Login</h2>
+                <hr>
+
+           
+              <% if(messages.length > 0) { %>
+              <div id="messageArea" class="alert alert-danger">
+                <%= messages %>
+              </div>
+              <% } %>
+
+              <form id="loginForm" novalidate method="POST">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-portrait">
+
+                      </i>
+                      
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="text" class="form-control border border-dark" id="username" name="username"  required
+                    value="" placeholder="Username">
+                  </div>
+                </div>
+<br>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fas fa-lock">
+                      </i>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="password" class="form-control border border-dark" id="password" name="password"  required
+                    value="" placeholder="Password">
+                  </div>
+                 
+                </div>                                        
+                <div class="text-end mt-2">
+                  <button id="loginButton" type="submit" class="btn btn-dark"><i class="fas fa-sign-in-alt"></i> Login</button>
+                  <button id="cancelButton" type="reset" class="btn btn-dark"><i class="fas fa-undo"></i> Cancel</button>
+                </div>
+              </form>
+             
+          </div>
+          <p class="text-center text-muted small">
+            New to here? <br>
+            <a href="/register">Join now</a>
+          </p>
+    </div>
+</div>
+

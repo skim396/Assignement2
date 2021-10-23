@@ -1,0 +1,23 @@
+/*custom css goes here*/
+.header_area{
+    color:goldenrod;
+}
+
+body {
+  
+}
+
+a {
+ 
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height:76px;
+    width: 100%;
+    background-color:black;
+    color:goldenrod;
+    text-align: center;
+ }

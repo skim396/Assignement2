@@ -1,0 +1,50 @@
+/*header area*/
+
+.header_area{
+    color:goldenrod;
+}
+/* Home Area */
+body {
+  
+}
+
+a {
+ 
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height:76px;
+    width: 100%;
+    background-color:black;
+    color:goldenrod;
+    text-align: center;
+ }
+
+ /*Services Area */ 
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.services-area .services-title h1{
+    font-size: 35px;
+}
+
+.services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}

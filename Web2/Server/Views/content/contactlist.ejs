@@ -1,0 +1,55 @@
+<!-- /*
+* name : Seungkoo Kim
+* id : 301150666
+* file Name : contactlist.ejs
+* date : 23/10/2021
+*/ --><body style="background-color: beige;">
+  
+  
+  <div class="container p-3 my-3 border" style="box-shadow: 1px 1px 5px 3px">
+<h2>Business Contact List</h2>
+<br>
+
+        <% if(displayName) { %>
+          <a href="/contactlist/add" id="addButton" class="btn btn-info"><i class="fas fa-plus-circle"></i> Add contact Item</a>
+        <% } %>
+        
+
+        <table class="table">
+            <thead>
+              <tr class="table-success">
+                <th scope="col">#</th>
+                <th scope="col">Contact Name</th>
+                <th scope="col">Contact Number</th>
+                <th scope="col">Email Address</th>
+                
+                <% if(displayName) { %>
+                  <th></th>
+                  <th></th>
+                <% } %>
+              </tr>
+            </thead>
+            <tbody>
+
+             <!-- Repeatable Row Template -->   
+
+             <% for(let count = 0; count < contact.length; count++) { %>
+              
+                <tr>
+                    <th scope="row"><%= count + 1 %></th>
+                    <td><%= contact[count].FullName %></td>
+                    <td><%= contact[count].ContactNumber %></td>
+                    <td><%= contact[count].EmailAddress %></td>
+                    
+                    <% if(displayName) { %>
+                      <td class="text-center"><a href="/contactlist/update/<%= contact[count]._id %>" class="btn btn-primary"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                      <td class="text-center"><a href="/contactlist/delete/<%= contact[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                    <% } %>
+                </tr>
+                
+              <% } %>
+
+            </tbody>
+          </table>
+    </div>
+</div>

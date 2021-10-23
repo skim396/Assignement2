@@ -1,0 +1,53 @@
+<h1><%= title %></h1>
+
+<div class="row">
+    <div class="col">
+
+        <% if(displayName) { %>
+          <a href="/contact-list/add" id="addButton" class="btn btn-primary mb-1"><i class="fas fa-plus-circle"></i> Add contact Item</a>
+        <% } %>
+
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">username</th>
+                <th scope="col">password</th>
+                <th scope="col">email</th>
+                <th scope="col">city</th>
+                <th scope="col">profession</th>
+                <th scope="col">age</th>
+                
+                <% if(displayName) { %>
+                  <th></th>
+                  <th></th>
+                <% } %>
+              </tr>
+            </thead>
+            <tbody>
+
+             <!-- Repeatable Row Template -->   
+
+             <% for(let count = 0; count < contact.length; count++) { %>
+              
+                <tr>
+                    <th scope="row"><%= count + 1 %></th>
+                    <td><%= contact[count].username %></td>
+                    <td><%= contact[count].password %></td>
+                    <td><%= contact[count].email %></td>
+                    <td><%= contact[count].city %></td>
+                    <td><%= contact[count].profession %></td>
+                    <td><%= contact[count].age %></td>
+                    
+                    <% if(displayName) { %>
+                      <td class="text-center"><a href="/contact-list/edit/<%= contact[count]._id %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                      <td class="text-center"><a href="/contact-list/delete/<%= contact[count]._id %>" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</a></td>
+                    <% } %>
+                </tr>
+                
+              <% } %>
+
+            </tbody>
+          </table>
+    </div>
+</div>

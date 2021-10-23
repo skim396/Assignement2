@@ -1,0 +1,82 @@
+/*
+
+ 
+
+ 
+* name : Seungkoo Kim
+* id : 301150666
+* file Name : app.css
+* date : 23/10/2021
+
+ 
+*/
+
+
+ section{
+    
+    padding-bottom:0px;
+} 
+
+section h1{
+    
+    text-align: left;
+
+}
+section p{
+    font-weight: 300;
+    
+}
+button{
+  max-width: 50%;
+    
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    display:block;
+    font-family: 'Inter', sans-serif ;
+    height: auto;
+    
+}
+
+/*header area*/
+.header_area{
+    color:black;
+}
+
+
+ /*Services Area */ 
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+/*update page*/
+
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height:35px;
+    width: 100%;
+    background-color:black;
+    color:white;
+    text-align: center;
+ }
+ 

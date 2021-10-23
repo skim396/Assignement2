@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section -->
+<head>
+  <%- include('../partials/head.ejs'); %>
+</head>
+<!-- Main Navigation Section -->
+<header>
+  <%- include('../partials/header.ejs'); %>
+</header>
+
+<div class="row justify-content-lg-center bg-dark my-5 p-5" id="update">
+      <h1 id="h1update"><strong><%= title %> Contacts</strong></h1>
+      
+      <form method="POST" class="uform col-lg-10">
+            <!-- FullName -->
+            <div class="input-group mb-2">
+                  <span class="input-group-text" id="fullname">Full Name</span>
+                  <input id="fullname" type="text" class="form-control" placeholder="FullName" aria-label="FullName" aria-describedby="Item FullName" name="FullName" 
+                  value="<%= item.FullName %> " required>
+            </div>
+             <!-- ContactNumber -->
+             <div class="input-group mb-3">
+                <span class="input-group-text" id="contactnumber">Contact Number</span>
+                <input id="contactnumber" type="text" class="form-control" placeholder="ContactNumber" aria-label="ContactNumber" aria-describedby="Item ContactNumber" name="ContactNumber" 
+                value="<%= item.ContactNumber %> " required>
+          </div>
+            <!-- EmailAddress -->
+            <div class="input-group mb-2">
+                  <span class="input-group-text" id="emailaddress">Email Address</span>
+                  <input id="emailaddress" type="text" class="form-control" placeholder="EmailAddress" aria-label="EmailAddress" aria-describedby="Item EmailAddress" name="EmailAddress" 
+                  value="<%= item.EmailAddress %> " required>
+            </div>
+            <!-- update button -->
+            <% if(title == "Update") { %>
+                  <button type="submit" class="btn btn-primary" id="editButton"><i class="fas fa-edit fa-lg"></i> Update</button>
+                  <% } else { %>
+                  <button type="submit" class="btn btn-primary" id="addButton"><i class="fas fa-plus-circle fa-lg"></i> Add</button>
+            <% } %>
+            <!-- cancel button-->
+            <a href="/contactlist" id="cancelButton" type="button" class="btn btn-warning ms-1"><i class="fas fa-undo"></i> Cancel</a>
+       </form>
+      </div>
+<span class="type" id="extraspan"></span>
+</div>

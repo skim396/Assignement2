@@ -1,0 +1,26 @@
+{
+    "contact-list":
+    [
+        {
+            "name": "Yonas",
+            "number": "416-507-2280",
+            "email": "yonas-berhane23@live.ca"
+        },
+        {
+            "name": "Kyle",
+            "number": "416-609-4390",
+            "email": "kylelowry@gmail.com"
+        },
+        {
+            "name": "Jimmy",
+            "number": "226-987-3421",
+            "email": "jimmybutler@hotmail.com"
+        },
+        {
+            "name": "Lebron",
+            "number": "602-643-5523",
+            "email": "lebronjames@gmail.com"
+        }
+
+    ]
+        }

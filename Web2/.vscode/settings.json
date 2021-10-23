@@ -1,0 +1,21 @@
+{
+    "cSpell.ignoreWords": [
+        "core",
+        "describedby",
+        "fontawesome",
+        "fortawesome",
+        "fortawesome fontawesome free",
+        "free",
+        "popperjs",
+        "popperjs core"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".history": true
+    },
+    "explorerExclude.backup": null
+}

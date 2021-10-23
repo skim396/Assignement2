@@ -1,0 +1,26 @@
+{
+    "contact-list":
+    [
+        {
+            "FullName": "Yonas Berhane",
+            "ContactNumber": "416-507-2280",
+            "EmailAddress": "yonas-berhane23@live.ca"
+        },
+        {
+            "FullName": "Kyle Lowry",
+            "ContactNumber": "416-609-4390",
+            "EmailAddress": "kylelowry@gmail.com"
+        },
+        {
+            "FullName": "Jimmy Butler",
+            "ContactNumber": "226-987-3421",
+            "EmailAddress": "jimmybutler@hotmail.com"
+        },
+        {
+            "FullName": "Lebron James",
+            "ContactNumber": "602-643-5523",
+            "EmailAddress": "lebronjames@gmail.com"
+        }
+
+    ]
+        }

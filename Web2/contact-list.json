@@ -1,0 +1,16 @@
+{
+    "contact-list":
+    [
+        {
+            "FullName": "Lionel Messi",
+            "ContactNumber": "1234-5678",
+            "EmailAddress": "messi10@live.ca"
+        },
+        {
+            "FullName": "Brad Pitt",
+            "ContactNumber": "1244-4455",
+            "EmailAddress": "brad12@gmail.com"
+        }
+
+    ]
+        }

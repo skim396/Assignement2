@@ -1,0 +1,34 @@
+<!-- /*
+* File Name  : index.ejs
+* Author     : Yonas Berhane
+* Student Id : 301165447
+* Date       : September 27, 2021
+* Description: Assignment 1- Express Portfolio Site for COMP229-F2021
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section -->
+<head>
+  <%- include('partials/head.ejs'); %>
+</head>
+<!-- Main Navigation Section -->
+<header>
+  <%- include('partials/header.ejs'); %>
+</header>
+<!-- Content Section -->
+<main>
+  <div class="container">
+    <%- include('content/' + page + '.ejs'); %>
+  </div>
+</main>
+<!-- Footer Section-->
+<footer>
+  <%- include('partials/footer.ejs'); %>
+</footer>
+<!-- JavaScript Section -->
+<script src="./jquery/dist/jquery.min.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="./Scripts/app.js"></script>
+</body>
+</html>
