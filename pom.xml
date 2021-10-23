@@ -1,0 +1,20 @@
+{
+    "name": "XMLDataset",
+    "properties": {
+        "type": "Xml",
+        "linkedServiceName": {
+            "referenceName": "<Azure Blob Storage linked service name>",
+            "type": "LinkedServiceReference"
+        },
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "container": "containername",
+                "folderPath": "folder/subfolder",
+            },
+            "compression": {
+                "type": "ZipDeflate"
+            }
+        }
+    }
+}
